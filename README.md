@@ -10,3 +10,5 @@ If one wishes to index Drupal content and users, one might process the `conf/dat
 The 4.x branch is setup to utilize solr 4ish configurations. These have been successfully tested with solr 4.2.0. 
 
 One major difference between solr 3.x and 4.x is when deploying configs they used to go to /usr/local/fedora/solr now they get deployed to /usr/local/fedora/solr/collection1 instead.
+
+[![Join the chat at https://gitter.im/UCLALibrary/basic-solr-config](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/UCLALibrary/basic-solr-config?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
