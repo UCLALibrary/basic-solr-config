@@ -125,8 +125,13 @@
        <xsl:value-of select="text()"/>
     </field>	
   </xsl:template> -->
-  <xsl:template match="mods:part" mode="slurping_MODS_IDEP">    
-    <xsl:for-each select="mods:detail">
+  
+ <!-- DGI found that this field is  being created by another xslt and its a duplicate -->
+ <!-- 
+ 
+ <xsl:template match="mods:part" mode="slurping_MODS_IDEP">    
+   
+	<xsl:for-each select="mods:detail">
       <xsl:if test="boolean(@type='volume')">
         <field name="mods_part_detail_volume_number_ms">
           <xsl:value-of select="mods:number/text()"/>
@@ -144,9 +149,10 @@
       <field name="mods_part_date_s">
         <xsl:value-of select="mods:date/text()"/>
       </field>
-    </xsl:if>
+    </xsl:if> 
     
-  </xsl:template>
+  </xsl:template>-->
+  
   <xsl:template match="mods:dateCreated[@encoding='iso8601' and not(@point)]" mode="slurping_MODS_IDEP">    
     <field name="bs_dateStart_s">
       <xsl:value-of select="text()"/>
